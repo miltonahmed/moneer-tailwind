@@ -6,3 +6,5 @@ export const menuData = [
   { id: 5, name: 'Blog', path: '/blog' },
   { id: 6, name: 'Contact Us', path: '/contact-us' },
 ];
+
+
