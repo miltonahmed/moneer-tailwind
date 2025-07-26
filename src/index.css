@@ -6,6 +6,7 @@
   --color-navBg: #141778;
   --font-lato: 'Lato', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
+  --color-white: #ffffff;
 }
 .navItemHover::after {
   background: linear-gradient(67deg, #ff357d -3.61%, #ff6f33 86.04%);
