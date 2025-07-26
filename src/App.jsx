@@ -13,21 +13,17 @@ function App() {
  
 
   return (
-    
-     <Routes>
-      <Route path='/' element= {<RootLayouts/>}>
-       <Route path='/' element= {<HomePage/>}/>
-        <Route path='/about' element={<AboutPage/>}/>
-        <Route path='/service' element={<ServicePage/>}/>
-        <Route path='/blog' element={<BlogPage/>}/>
-        <Route path='/contact' element={<ContactPage/>}/>
-        <Route path='/pages' element={<PagesPage/>}/>
+    <Routes>
+      <Route path="/" element={<RootLayouts />}>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/services" element={<ServicePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/pages" element={<PagesPage />} />
       </Route>
-     </Routes>
-
-      
-    
-  )
+    </Routes>
+  );
 }
 
 export default App
