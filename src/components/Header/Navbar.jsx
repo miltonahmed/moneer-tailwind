@@ -1,14 +1,15 @@
+import Container from "../../Utils/Container";
 
 const Navbar = () => {
   return (
     <>
-    <nav>
-      <h1>Milton Ahmed</h1>
-    </nav>
-  
-
+      <nav>
+        <Container>
+          <h1>Milton Ahmed</h1>
+        </Container>
+      </nav>
     </>
-  )
+  );
 }
 
 export default Navbar
