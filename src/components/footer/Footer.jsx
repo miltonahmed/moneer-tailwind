@@ -10,11 +10,11 @@ import Paragraph from '../../Utils/Paragraph';
 
 const Footer = () => {
   return (
-    <footer className="py-28 footer-bg">
+    <footer className="py-12 sm:py-20 md:py-28 footer-bg">
       <Container>
-        <div className=" flex gap-x-[100px] items-center">
+        <div className=" flex lg:gap-14  2xl:gap-x-[100px] items-center xs:mx-4 md:mx-6 xl:mx-auto max-lg:flex-wrap gap-y-5 sm:justify-between">
           {/* Footer Logo part  */}
-          <div className="w-[285px]">
+          <div className=" w-full sm:w-[60%] md:w-[285px] ">
             {/* footer logo  */}
             <Link>
               <Image source={Logo} alt="footer logo" />
@@ -22,13 +22,13 @@ const Footer = () => {
             {/* Paragraph */}
             <Paragraph
               text="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin commodo"
-              className="font-lato font-normal text-base leading-7 text-white mt-7"
+              className="font-lato font-normal text-base leading-7 text-white mt-7 max-w-[400px]"
             />
 
-            <address className="grid grid-cols-1 gap-4">
+            <address className="inline-grid  grid-cols-1 gap-4">
               <Link
                 to="mail:"
-                className="grid grid-cols-[16px_auto] gap-x-[18px]"
+                className="inline-grid grid-cols-[16px_auto] gap-x-[18px]"
               >
                 <FaRegEnvelope className=" text-secondary mt-2" />
                 <span className="font-lato text-white font-bold text-base leading-6 tracking-[0.7px] ">
@@ -37,7 +37,8 @@ const Footer = () => {
               </Link>
               <Link
                 to="call:123-123-123"
-                className="grid grid-cols-[16px_auto] gap-x-[18px]"
+                className="inline-grid grid-cols-[16px_auto] gap-x-[18px]"
+
               >
                 <FaPhone className="text-secondary mt-2" />
                 <span className="font-lato text-white font-bold text-base leading-6 tracking-[0.7px] ">
@@ -58,7 +59,7 @@ const Footer = () => {
             </address>
           </div>
           {/* Footer Middle  */}
-          <div className="w-[186px] pt-5">
+          <div className=" w-full sm:w-[30%] md:w-[186px] pt-5">
             <h4 className="font-montserrat text-2xl text-white tracking-[0.8px] font-bold capitalize pt">
               Company
             </h4>
@@ -78,11 +79,11 @@ const Footer = () => {
             </div>
           </div>
           {/* Footer Right  */}
-          <div className="w-[436px] ">
+          <div className=" w-full lg:w-[436px] ">
             <h4 className="font-montserrat text-2xl text-white tracking-[0.8px] font-bold capitalize leading-[52px]">
               Recent News
             </h4>
-            <div className="mt-[22px] grid grid-cols-1 gap-y-[14px]">
+            <div className="mt-[22px] grid grid-cols-1 md:grid-cols-2  lg:grid-cols-1  gap-y-[14px] gap-x-5">
               {footerTitleData.map((item, index) => (
                 <Link
                   to="/"

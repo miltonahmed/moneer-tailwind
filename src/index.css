@@ -9,7 +9,7 @@
   --color-white: #ffffff;
   --color-secondary: #ff5851;
   /* Responsive Device Start  */
-  --breakpoint-xs: 400px;
+  --breakpoint-xs: 350px;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
