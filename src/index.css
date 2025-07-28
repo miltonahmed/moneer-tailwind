@@ -8,6 +8,8 @@
   --font-montserrat: 'Montserrat', sans-serif;
   --color-white: #ffffff;
   --color-secondary: #ff5851;
+  --color-text-primary: #000619;
+  --color-text-secondary: #727272;
   /* Responsive Device Start  */
   --breakpoint-xs: 350px;
   --breakpoint-sm: 576px;
