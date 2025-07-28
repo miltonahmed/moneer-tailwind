@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import { FaBars, FaUser } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
 import Logo from '../../assets/images/logo.png';
 import Container from '../../Utils/Container';
 import { menuData } from '../../Utils/Data/menuData';
 import Image from '../../Utils/Image';
-
+import ResponseBar from './ResponseBar';
 
 const Navbar = () => {
+  const [showBars, setShowBars] = useState(false);
   return (
     <>
       <nav className=" py-3 sm:py-4  lg:py-6 bg-navBg">
@@ -29,12 +31,18 @@ const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
-              <FaUser className="text-white text-base" /> 
+              <FaUser className="text-white text-base" />
             </ul>
             {/* Bars icons  */}
-            <FaBars className='text-white text-2xl lg:hidden'/>
+            <FaBars
+              onClick={() => setShowBars(true)}
+              className="text-white text-2xl lg:hidden"
+            />
           </div>
         </Container>
+        {(
+          <ResponseBar showBars={showBars} setShowBars={setShowBars} />
+        )}
       </nav>
     </>
   );
