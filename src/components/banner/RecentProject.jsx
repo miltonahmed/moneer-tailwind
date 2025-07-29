@@ -1,8 +1,8 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Container from '../../Utils/Container';
 import { RecentProjectData } from '../../Utils/Data/Banner/RecentProjectData';
 import Paragraph from '../../Utils/Paragraph';
 import RecentProjectCard from '../Common/Slider/RecentProjectCard';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Swiper imports
 import 'swiper/css';
@@ -10,7 +10,16 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 
+
 const RecentProject = () => {
+   const pagination = {
+     clickable: true,
+     renderBullet: function (index, className) {
+       return '<span class="' + className + '">'  + '</span>';
+     },
+   };
+
+  
   return (
     <section className="py-[90px] bg-white">
       <Container>
@@ -27,11 +36,9 @@ const RecentProject = () => {
           <Swiper
             slidesPerView={3}
             spaceBetween={34}
-            pagination={{
-              clickable: true,
-            }}
+            pagination={pagination}
             modules={[Pagination]}
-            className="mySwiper"
+            className="recentProjectSlider"
           >
             {RecentProjectData.map(item => (
               <SwiperSlide key={item.id}>

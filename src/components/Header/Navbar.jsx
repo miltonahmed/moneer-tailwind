@@ -7,8 +7,11 @@ import { menuData } from '../../Utils/Data/MenuData';
 import Image from '../../Utils/Image';
 import ResponseBar from './ResponseBar';
 
+
 const Navbar = () => {
   const [showBars, setShowBars] = useState(false);
+
+  
   return (
     <>
       <nav className=" py-3 sm:py-4  lg:py-6 bg-navBg">

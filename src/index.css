@@ -27,8 +27,16 @@
   background: linear-gradient(286deg, #2a2aff -70.7%, #550096 78.49%);
 }
 
-.recentProjectSlider
-  .swiper-pagination-bullet
-  .swiper-pagination-bullet-active {
-  background: red;
+.recentProjectSlider .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  padding-bottom: -6px;
+}
+
+.recentProjectSlider .swiper-pagination-bullet-active {
+  background: var(--color-secondary);
+}
+
+.swiper-wrapper {
+  padding-bottom: 40px;
 }
