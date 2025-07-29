@@ -24,14 +24,14 @@ const RecentProject = () => {
 
   
   return (
-    <section className="py-[90px] bg-white">
+    <section className="sm:py-[20px] lg:py-[90px] bg-white ">
       <Container>
-        <div className="text-center mb-12">
-          <h2 className="font-montserrat text-text-primary text-4xl font-bold mb-3">
+        <div className="text-center mb-12 sm:px-4 ">
+          <h2 className="font-montserrat text-text-primary xs:text-base sm:text-xl  lg:text-4xl font-bold mb-3">
             Recent Projects
           </h2>
           <Paragraph
-            className="text-base text-text-secondary font-lato font-normal leading-[26px] max-w-[726px] mx-auto"
+            className="sm:text-sm md:text-base lg:text-base text-text-secondary font-lato font-normal leading-[26px] max-w-[726px] mx-auto"
             text="Phasellus sodales est id sapien condimentum sagittis. Vivamus eget lorem augue. Nunc ut diam tellus. Fusce mattis luctus sem, sollicitudin tincidunt ante ullamcorper"
           />
         </div>
@@ -67,7 +67,6 @@ const RecentProject = () => {
                 spaceBetween: 34,
               },
             }}
-            
           >
             {RecentProjectData.map(item => (
               <SwiperSlide key={item.id}>
