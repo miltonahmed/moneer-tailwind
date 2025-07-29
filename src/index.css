@@ -26,3 +26,9 @@
 .footer-bg {
   background: linear-gradient(286deg, #2a2aff -70.7%, #550096 78.49%);
 }
+
+.recentProjectSlider
+  .swiper-pagination-bullet
+  .swiper-pagination-bullet-active {
+  background: red;
+}

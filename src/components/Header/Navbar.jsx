@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center xs:mx-4 md:mx-6 xl:mx-auto">
             {/* Logo  */}
             <Link to="/">
-              <Image source={Logo} alt="company logo" />
+              <Image src={Logo} alt="company logo" />
             </Link>
             {/* Menu  */}
             <ul className=" hidden lg:flex items-center gap-14">

@@ -17,7 +17,7 @@ const Footer = () => {
           <div className=" w-full sm:w-[60%] md:w-[285px] ">
             {/* footer logo  */}
             <Link>
-              <Image source={Logo} alt="footer logo" />
+              <Image src={Logo} alt="footer logo" />
             </Link>
             {/* Paragraph */}
             <Paragraph
