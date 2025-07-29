@@ -3,7 +3,7 @@ import { FaBars, FaUser } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router';
 import Logo from '../../assets/images/logo.png';
 import Container from '../../Utils/Container';
-import { menuData } from '../../Utils/Data/menuData';
+import { menuData } from '../../Utils/Data/MenuData';
 import Image from '../../Utils/Image';
 import ResponseBar from './ResponseBar';
 
