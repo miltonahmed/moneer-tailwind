@@ -1,3 +1,4 @@
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Container from '../../Utils/Container';
 import { RecentProjectData } from '../../Utils/Data/Banner/RecentProjectData';
@@ -5,7 +6,9 @@ import Paragraph from '../../Utils/Paragraph';
 import RecentProjectCard from '../Common/Slider/RecentProjectCard';
 
 // Swiper imports
+import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from 'react-icons/md';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
@@ -32,13 +35,39 @@ const RecentProject = () => {
             text="Phasellus sodales est id sapien condimentum sagittis. Vivamus eget lorem augue. Nunc ut diam tellus. Fusce mattis luctus sem, sollicitudin tincidunt ante ullamcorper"
           />
         </div>
-        <div className="w-full">
+        <div className="w-full relative">
+          <div className="absolute h-[265px] -left-11 flex items-center">
+            <MdOutlineNavigateBefore className="text-2xl text-[#B2B1B1] cursor-pointer prevSlider" />
+          </div>
+          <div className="absolute h-[265px] -right-11 flex items-center ">
+            <MdOutlineNavigateNext className="text-2xl text-[#B2B1B1] cursor-pointer nextSlider" />
+          </div>
           <Swiper
             slidesPerView={3}
             spaceBetween={34}
+            loop={true}
             pagination={pagination}
-            modules={[Pagination]}
+            navigation={{
+              prevEl: '.prevSlider',
+              nextEl: '.nextSlider',
+            }}
+            modules={[Pagination, Navigation]}
             className="recentProjectSlider"
+            breakpoints={{
+              350: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 34,
+              },
+            }}
+            
           >
             {RecentProjectData.map(item => (
               <SwiperSlide key={item.id}>
