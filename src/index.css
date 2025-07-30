@@ -10,6 +10,11 @@
   --color-secondary: #ff5851;
   --color-text-primary: #000619;
   --color-text-secondary: #727272;
+  --color-text-blue: #1920e0;
+  --color-inputBorder: rgba(200, 200, 200, 0.74);
+  --color-inputBg: rgba(245, 245, 255, 0.54);
+  --color-checkBoxBorder: #979797;
+
   /* Responsive Device Start  */
   --breakpoint-xs: 350px;
   --breakpoint-sm: 576px;
@@ -25,6 +30,19 @@
 }
 .footer-bg {
   background: linear-gradient(286deg, #2a2aff -70.7%, #550096 78.49%);
+}
+
+.btn-bg {
+  background: linear-gradient(67deg, #ff357d -3.61%, #ff6f33 86.04%);
+}
+.hr {
+  border-radius: 2px;
+  background: linear-gradient(
+    166deg,
+    #7c00d9 48.55%,
+    #4600b1 77.52%,
+    #141778 99.8%
+  );
 }
 
 .recentProjectSlider .swiper-pagination-bullet {

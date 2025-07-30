@@ -38,7 +38,6 @@ const Footer = () => {
               <Link
                 to="call:123-123-123"
                 className="inline-grid grid-cols-[16px_auto] gap-x-[18px]"
-
               >
                 <FaPhone className="text-secondary mt-2" />
                 <span className="font-lato text-white font-bold text-base leading-6 tracking-[0.7px] ">
@@ -71,7 +70,13 @@ const Footer = () => {
                       <FaChevronRight className="text-secondary mt-2" />
                       <span className="font-lato font-bold text-base text-white leading-6 tracking-[0.7px] capitalize">
                         {item.name}
+                        {item.name === 'Prices Plans' && (
+                          <span className="text-xs font-bold font-lato text-white bg-[#F7931A]  px-3 py-1 rounded-[6px] ml-3">
+                            Hot!
+                          </span>
+                        )}
                       </span>
+                      {/* Right side text only for 'About Us' */}
                     </Link>
                   </li>
                 ))}
