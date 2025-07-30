@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm"
+import Invest from "./Invest"
 import RecentProject from "./RecentProject"
 
 const Banner = () => {
@@ -6,7 +7,7 @@ const Banner = () => {
     <>
      {/* <Hero/> */}
      {/* <Divider/> */}
-     {/* <Invest/>  */}
+     <Invest/> 
      
       <RecentProject/>
       <ContactForm/>
