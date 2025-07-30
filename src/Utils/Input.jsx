@@ -3,11 +3,14 @@ const Input = ({
   type = "text",
   placeholder = "",
   className = "",
+  name ="",
+  value ,
+  id,
   onChange
 
 }) => {
   return (
-   <input type={type} placeholder={placeholder} className={className} onChange={onChange}/>
+   <input value={value} id={id} name={name} type={type} placeholder={placeholder} className={className} onChange={onChange}/>
   )
 }
 
