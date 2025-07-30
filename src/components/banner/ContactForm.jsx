@@ -20,18 +20,18 @@ const ContactForm = () => {
               <form>
                 <textarea
                   placeholder="Your Question"
-                  className=" w-full h-[219px] border border-(--color-inputBorder) rounded-3xl px-4 py-2.5 placeholder:text-base placeholder:text-text-secondary placeholder:font-normal placeholder:font-lato placeholder:leading-7"
+                  className=" w-full h-[219px] border border-(--color-inputBorder) rounded-3xl px-4 py-2.5 placeholder:text-base placeholder:text-text-secondary placeholder:font-normal placeholder:font-lato placeholder:leading-7 outline-0"
                 ></textarea>
                 <div className="pt-[17px] pb-[21px] grid grid-cols-2 gap-[11px]">
                   <Input
                     type="text"
                     placeholder="Your Name"
-                    className="border border-(--color-inputBorder) h-[48px] rounded-3xl px-4 py-2.5 placeholder:font-normal placeholder:font-lato placeholder:text-base placeholder:text-text-secondary placeholder:leading-7 "
+                    className="border border-(--color-inputBorder) h-[48px] rounded-3xl px-4 py-2.5 placeholder:font-normal placeholder:font-lato placeholder:text-base placeholder:text-text-secondary placeholder:leading-7 outline-0 "
                   />
                   <Input
                     type="text"
                     placeholder="Your Email"
-                    className="border border-(--color-inputBorder) h-[48px] rounded-3xl px-4 py-2.5 placeholder:font-normal placeholder:font-lato placeholder:text-base placeholder:text-text-secondary placeholder:leading-7 "
+                    className="border border-(--color-inputBorder) h-[48px] rounded-3xl px-4 py-2.5 placeholder:font-normal placeholder:font-lato placeholder:text-base placeholder:text-text-secondary placeholder:leading-7 outline-0 "
                   />
                 </div>
                 <label className="flex  items-center space-x-2">
