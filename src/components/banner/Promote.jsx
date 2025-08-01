@@ -7,7 +7,7 @@ const Promote = () => {
   return (
     <section className=" xs:py-4 md:py-6 lg:py-10 relative ">
       <Container>
-        <div className=" flex   gap-24  ">
+        <div className=" flex gap-24  ">
           <div>
             <h3 className="text-[34px] text-text-primary font-bold leading-12 font-montserrat">
               Promote your Cryptocurrency{' '}
@@ -25,7 +25,7 @@ const Promote = () => {
                   </div>
 
                   {/* Text Content */}
-                  <div className="text-center  max-w-[422px] sm:w-full">
+                  <div className="  max-w-[422px] sm:w-full">
                     <h3 className=" text-base text-[#000619] font-bold  font-montserrat leading-6 tracking-[0.333px] mb-[15px]">
                       {item.title}
                     </h3>
