@@ -1,5 +1,7 @@
 import { useFormik } from 'formik';
+import simpleImage from '../../../src/assets/images/form-img.png';
 import Container from '../../Utils/Container';
+import Image from '../../Utils/Image';
 import Input from '../../Utils/Input';
 import { formValidation } from '../../Utils/Validation/FormValidation';
 
@@ -22,13 +24,15 @@ const ContactForm = () => {
     <section className="py-30">
       <Container>
         <div className="patent">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 gap-[206px] items-center">
             {/* <div className="max-w-[671px] h-[591px] ">
               <Image src={FormImage} className="w-full" />
             </div> */}
-            <div></div>
+            <div className="w-[678px]">
+              <Image className=" -ml-40 w-full" src={simpleImage} />
+            </div>
 
-            <div className="">
+            <div className="w-[534px]">
               <h3 className="font-montserrat text-text-blue text-[42px] font-bold mb-4">
                 Need More Answers?
               </h3>
