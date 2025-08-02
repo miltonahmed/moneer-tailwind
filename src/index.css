@@ -4,6 +4,7 @@
 
 body {
   overflow-x: hidden;
+  padding-top: 99px;
 }
 
 @theme {
@@ -29,6 +30,16 @@ body {
   --breakpoint-2xl: 1400px;
   /* Responsive Device End */
 }
+.hero-bg {
+  background: linear-gradient(
+    179deg,
+    #5f5fff -82.34%,
+    #5f5fff -82.34%,
+    #f5f5ff 37.14%,
+    #fff 76.07%
+  );
+}
+
 .navItemHover::after {
   background: linear-gradient(67deg, #ff357d -3.61%, #ff6f33 86.04%);
 }
