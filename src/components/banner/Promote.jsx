@@ -6,19 +6,19 @@ import Image from '../../Utils/Image';
 import Paragraph from '../../Utils/Paragraph';
 const Promote = () => {
   return (
-    <section className=" xs:py-4 md:py-6 lg:py-10 relative ">
+    <section className=" relative mt-[80px] py-24">
       <Container>
-        <div className=" flex gap-24  relative z-10 ">
+        <div className=" flex gap-24 relative z-10 ">
           <div>
             <h3 className="text-[34px] text-text-primary font-bold leading-12 font-montserrat">
               Promote your Cryptocurrency{' '}
             </h3>
 
-            <div>
+            <div className="">
               {PromoteData.map(item => (
                 <div
                   key={item.id}
-                  className="flex flex-col items-start sm:flex-row   gap-8 mb-10 mt-10"
+                  className="flex flex-col items-start sm:flex-row   gap-8 mb-10 mt-10 max-w-[540px]"
                 >
                   {/* Image */}
                   <div className="w-[80px] h-[80px] rounded-full flex justify-center  items-center  overflow-hidden shadow-[0_0px_10px_rgba(0,0,0,0.30)]">
@@ -36,23 +36,19 @@ const Promote = () => {
               ))}
             </div>
           </div>
-          <div className=" relative">
+          <div className=" relative z-10">
             <div className=" -mr-[200px] hidden lg:block">
               <Image
                 src={simpleImage}
                 alt="Promotion Visual"
-                className="w-full h-auto object-contain"
+                className="w-full object-contain"
               />
             </div>
           </div>
         </div>
       </Container>
-      <div className="absolute bottom-0 left-0 w-full z-0">
-        <img
-          src={Shape}
-          alt="Section Bottom Shape"
-          className="w-full h-auto object-cover"
-        />
+      <div className="absolute top-0 left-0 z-0 h-[834px]">
+        <img src={Shape} alt="Section Bottom Shape" />
       </div>
     </section>
   );

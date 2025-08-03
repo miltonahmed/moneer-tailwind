@@ -9,17 +9,16 @@ import RecentProject from "./RecentProject"
 const Banner = () => {
   return (
     <>
-     <Hero/>
-       {/* <SwiperLogo/> */}
-       <BrandPartner/>
-      <Divider/> 
-      <Invest/> 
-      <RecentProject/>
-      <ContactForm/>
-      <Promote/>
-      
+      <Hero />
+      {/* <SwiperLogo/> */}
+      <BrandPartner />
+      <Divider />
+      <Invest />
+      <Promote />
+      <RecentProject />
+      <ContactForm />
     </>
-  )
+  );
 }
 
 export default Banner
