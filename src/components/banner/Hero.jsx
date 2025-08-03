@@ -12,15 +12,24 @@ const Hero = () => {
   return (
     <section className="h-screen hero-bg relative overflow-hidden">
       {/* Background Shapes */}
-      <Image src={ShapeOne} className="absolute top-0 right-0 z-0 " />
-      <Image src={ShapeTwo} className="absolute top-0 right-0 z-0 " />
-      <div className='absolute top-0 w-[408px] h-auto mt-[29px]'>
+      <Image
+        src={ShapeOne}
+        className=" hidden lg:block absolute top-0 right-0 z-0   "
+      />
+      <Image
+        src={ShapeTwo}
+        className=" hidden lg:block absolute top-0 right-0 z-0 "
+      />
+      <div className=" hidden lg:block absolute top-0 w-[408px] h-auto mt-[29px]">
         <Image src={ShapeCircle} className="w-full" />
-        <Image src={ShapeThree} className="absolute top-1/2  -translate-y-1/2 left-0 z-0 " />
+        <Image
+          src={ShapeThree}
+          className="absolute top-1/2  -translate-y-1/2 left-0 z-0 "
+        />
       </div>
 
-      <div className="max-w-[1109px] mx-auto h-full flex items-center justify-center px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-28 items-center">
+      <div className="max-w-[1109px] mx-auto h-full flex items-center justify-center px-4 relative z-10 sm:px-4 md:my-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-28 sm:gap-4 items-center">
           {/* Left Content */}
           <div className="max-w-[535px] text-center lg:text-left">
             <h4 className="text-sm md:text-base text-text-primary font-montserrat font-bold leading-6 tracking-tight">
@@ -51,7 +60,7 @@ const Hero = () => {
           {/* Right Content */}
           <div className=" relative">
             <div className="w-[350px] md:w-[450px] lg:w-[572px] absolute left-32 top-0 -translate-y-1/2 z-10">
-              <Image src={Phone} className="w-full h-auto" alt="Phone Image" />
+              <Image src={Phone}  className="w-full h-auto " alt="Phone Image" />
             </div>
           </div>
         </div>

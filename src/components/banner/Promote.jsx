@@ -1,3 +1,4 @@
+import Shape from '../../../src/assets/images/promot-shape.png';
 import simpleImage from '../../../src/assets/images/promote.png';
 import Container from '../../Utils/Container';
 import { PromoteData } from '../../Utils/Data/Banner/PromoteData';
@@ -7,7 +8,7 @@ const Promote = () => {
   return (
     <section className=" xs:py-4 md:py-6 lg:py-10 relative ">
       <Container>
-        <div className=" flex gap-24  ">
+        <div className=" flex gap-24  relative z-10 ">
           <div>
             <h3 className="text-[34px] text-text-primary font-bold leading-12 font-montserrat">
               Promote your Cryptocurrency{' '}
@@ -35,7 +36,7 @@ const Promote = () => {
               ))}
             </div>
           </div>
-          <div className="flex-1 relative">
+          <div className=" relative">
             <div className=" -mr-[200px] hidden lg:block">
               <Image
                 src={simpleImage}
@@ -46,13 +47,13 @@ const Promote = () => {
           </div>
         </div>
       </Container>
-      {/* <div className="absolute bottom-0 left-0 w-full z-0">
+      <div className="absolute bottom-0 left-0 w-full z-0">
         <img
-          src={shapeImage}
+          src={Shape}
           alt="Section Bottom Shape"
           className="w-full h-auto object-cover"
         />
-      </div> */}
+      </div>
     </section>
   );
 };
