@@ -1,3 +1,4 @@
+import BrandPartner from "./BrandPartner"
 import ContactForm from "./ContactForm"
 import Divider from "./Divider"
 import Hero from "./Hero"
@@ -10,6 +11,7 @@ const Banner = () => {
     <>
      <Hero/>
        {/* <SwiperLogo/> */}
+       <BrandPartner/>
       <Divider/> 
       <Invest/> 
       <RecentProject/>
