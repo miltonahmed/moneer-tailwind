@@ -22,6 +22,7 @@ const ContactForm = () => {
   });
   return (
     <section className="py-30">
+    <Image/>
       <Container>
         <div className="patent">
           <div className="grid grid-cols-2 gap-[206px] items-center">

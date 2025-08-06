@@ -1,3 +1,4 @@
+import BlockChain from "./BlockChain"
 import BrandPartner from "./BrandPartner"
 import ContactForm from "./ContactForm"
 import Divider from "./Divider"
@@ -14,6 +15,7 @@ const Banner = () => {
       <BrandPartner />
       <Divider />
       <Invest />
+      <BlockChain/>
       <Promote />
       <RecentProject />
       <ContactForm />
