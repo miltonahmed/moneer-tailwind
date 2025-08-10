@@ -1,5 +1,6 @@
 import { useFormik } from 'formik';
 import simpleImage from '../../../src/assets/images/form-img.png';
+import shape from '../../../src/assets/images/from-oval.png';
 import Container from '../../Utils/Container';
 import Image from '../../Utils/Image';
 import Input from '../../Utils/Input';
@@ -21,16 +22,16 @@ const ContactForm = () => {
     },
   });
   return (
-    <section className="py-30">
-    <Image/>
+    <section className="py-30 relative mt-14 mb-24">
+      <Image src={shape} className="absolute z-0 left-0 bottom-0" />
       <Container>
-        <div className="patent">
+        <div className="">
           <div className="grid grid-cols-2 gap-[206px] items-center">
-            {/* <div className="max-w-[671px] h-[591px] ">
-              <Image src={FormImage} className="w-full" />
-            </div> */}
-            <div className="w-[678px]">
-              <Image className=" -ml-40 w-full" src={simpleImage} />
+            <div className="">
+              <Image
+                className=" absolute left-0 bottom-0 w-[678px]"
+                src={simpleImage}
+              />
             </div>
 
             <div className="w-[534px]">

@@ -28,7 +28,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="max-w-[1109px] mx-auto h-full flex items-center justify-center px-4 relative z-10 sm:px-4 md:my-6">
+      <div className="max-w-[1109px] mx-auto h-full flex items-center justify-center px-4 sm:px-4 relative z-10  md:my-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-28 sm:gap-4 items-center">
           {/* Left Content */}
           <div className="max-w-[535px] text-center lg:text-left">
@@ -64,6 +64,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      
       </div>
     </section>
   );

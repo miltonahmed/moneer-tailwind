@@ -6,6 +6,7 @@ import Hero from "./Hero"
 import Invest from "./Invest"
 import Promote from "./Promote"
 import RecentProject from "./RecentProject"
+import RoadMap from "./RoadMap"
 
 const Banner = () => {
   return (
@@ -18,6 +19,7 @@ const Banner = () => {
       <BlockChain/>
       <Promote />
       <RecentProject />
+      <RoadMap/>
       <ContactForm />
     </>
   );
