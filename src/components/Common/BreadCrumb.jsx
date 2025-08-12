@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router';
 import breadCrumb from '../../../src/assets/images/breadcrumb.jpg';
 import Container from '../../Utils/Container';
-const BreadCrumb = ({breadTitle}) => {
+const BreadCrumb = () => {
+
+  const [pathName] = useState(window.location.pathname)
+  const pathArray = pathName?.split('/');
+  const currentPath = pathArray[1]
   return (
     <section>
       <div
@@ -11,7 +16,7 @@ const BreadCrumb = ({breadTitle}) => {
       >
         <Container>
           <h3 className="text-center font-montserrat text-4xl font-bold leading-12 text-white tracking-widest capitalize">
-            {breadTitle}
+            {currentPath}
           </h3>
           <div className="flex justify-center items-center gap-2 mt-9">
             <Link to="/home">
@@ -21,7 +26,7 @@ const BreadCrumb = ({breadTitle}) => {
             </Link>
             <FaAngleRight className="text-white" />
             <h5 className="font-lato text-sm font-bold leading-normal text-[#C9B5E5]">
-              {breadTitle}
+              {currentPath}
             </h5>
           </div>
         </Container>
