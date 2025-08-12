@@ -1,7 +1,8 @@
+import Service from "../../components/service/Service"
 
 const ServicePage = () => {
   return (
-    <div>ServicePage</div>
+    <Service/>
   )
 }
 
