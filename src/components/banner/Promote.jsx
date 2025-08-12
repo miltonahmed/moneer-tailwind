@@ -7,11 +7,14 @@ import Paragraph from '../../Utils/Paragraph';
 const Promote = () => {
   return (
     <section className=" relative mt-[80px] py-24">
+      <div className="absolute top-0 left-0 z-0">
+        <img src={Shape} alt="Section Bottom Shape" />
+      </div>
       <Container>
         <div className=" flex gap-24 relative z-10 ">
-          <div>
-            <h3 className="text-[34px] text-text-primary font-bold leading-12 font-montserrat">
-              Promote your Cryptocurrency{' '}
+          <div className='w-[540px]'>
+            <h3 className=" text-4xl text-text-primary font-bold  font-montserrat">
+              Promote your Cryptocurrency
             </h3>
 
             <div className="">
@@ -47,9 +50,6 @@ const Promote = () => {
           </div>
         </div>
       </Container>
-      <div className="absolute top-0 left-0 z-0 h-[834px]">
-        <img src={Shape} alt="Section Bottom Shape" />
-      </div>
     </section>
   );
 };
